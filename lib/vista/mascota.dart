@@ -2,7 +2,7 @@ import 'dart:developer';
 
 import 'package:flutter/material.dart';
 import 'package:tags/vista/menu.dart';
-import 'package:tags/vistas_obj_masc/mapa.dart';
+import 'package:tags/vistas_obj_masc/mapa_mascota.dart';
 
 class VistaMascota extends StatefulWidget {
   const VistaMascota({Key? key, required this.title}) : super(key: key);
@@ -14,8 +14,6 @@ class VistaMascota extends StatefulWidget {
 }
 class _MascotaState extends State<VistaMascota> {
    final _formKey =GlobalKey<FormState>();
-  String _nombre= "";
-  int _temperatura= 0;
 
   @override
 

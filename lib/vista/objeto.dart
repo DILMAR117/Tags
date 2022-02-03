@@ -2,6 +2,8 @@
 
 import 'package:flutter/material.dart';
 import 'package:tags/vista/menu.dart';
+import 'package:tags/vistas_obj_masc/mapa_objetos.dart';
+
 
 class VistaObjeto extends StatefulWidget {
   const VistaObjeto({Key? key, required this.title}) : super(key: key);
@@ -50,6 +52,8 @@ class _ObjetoState extends State<VistaObjeto> {
        ),
         ),
         InkWell(onTap: (){
+         Navigator.of(context).push(MaterialPageRoute(
+           builder: (BuildContext context)=> VistaMapaObj(title: widget.title)));
 
         },
            child:Container(decoration: BoxDecoration(borderRadius: BorderRadius.circular(20),color: Colors.yellow),
