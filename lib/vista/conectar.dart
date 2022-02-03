@@ -41,7 +41,8 @@ class _ConectarState extends State<VistaConectar> {
   Widget _logo(){
     return Container(
       color: Colors.black,
-      child: Image.asset('assets/logo.png'),
+      child: Text('Tags', 
+      style: TextStyle(color: Colors.white, fontSize: 70, fontWeight: FontWeight.bold),),
      margin: EdgeInsets.all(0),
      padding: EdgeInsets.all(30),
      alignment: Alignment.center,

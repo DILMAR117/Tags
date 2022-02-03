@@ -35,9 +35,9 @@ class _MapaState extends State<VistaMapaObj> {
           onPressed: () {
             showCupertinoModalPopup<void>(
               context: context,
-              builder: (BuildContext context) => CupertinoActionSheet(
+              builder: (BuildContext context) =>  CupertinoActionSheet(
                 title: Text(_objeto + ' de '+ _usuario),
-                message:  Text('Historial'),
+                message:  Text('Historial de ubicaciones'),
                 actions: <CupertinoActionSheetAction>[
                   CupertinoActionSheetAction(
                     child: const Text('Ocultar'),

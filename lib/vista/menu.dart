@@ -2,6 +2,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:tags/main.dart';
+import 'package:tags/tab/lista_carrito.dart';
 import 'package:tags/tab/lista_venta.dart';
 import 'package:tags/vista/conectar.dart';
 import 'package:tags/vista/mascota.dart';
@@ -86,12 +87,10 @@ class _MenuState extends State<VistaMenu>{
             leading: Icon(Icons.bar_chart, color:Colors.black, size: 15,),
             title: Text('Reportes', style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold, color: Colors.black),),
             onTap: () {
-              SnackBar snackBar = SnackBar(content: Text('objeto'), duration: Duration(seconds: 3),);
-              ScaffoldMessenger.of(context).showSnackBar(snackBar);
               Navigator.of(context).pop();
               Navigator.of(context).push(
               MaterialPageRoute(
-              builder: (BuildContext context)=>VistaConectar(title: widget.title)
+              builder: (BuildContext context)=>VistaCarrito(title: widget.title)
               )
               );
               

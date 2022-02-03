@@ -1,3 +1,4 @@
+
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -22,13 +23,37 @@ class _MapaState extends State<VistaMapa> {
         title: Text(widget.title),
       ),
       
-      body: _body(),
+      body: _body(), 
+
     );
   }
   Widget _body(){
+    return Form(child: 
+    Container(
+      child: Column(
+        children: [
+          _mapa(),
+          _historial()
+        ],
+      ),
+      ),
+    );
+  }
+  Widget _mapa(){
+    return Center(
+      child: Container(
+        alignment: Alignment.center,
+        padding: EdgeInsets.all(100),
+        child: Text('Mapa'),
+        ),
+
+    );
+  }
+  
+  Widget _historial(){
      return CupertinoPageScaffold(
        child: Container(
-         padding: EdgeInsets.fromLTRB(0.0, 500, 20.0, 0.0),
+         padding: EdgeInsets.fromLTRB(0.0, 200.0, 20.0, 0.0),
          margin: EdgeInsets.all(0),
          alignment: Alignment.topRight,
         child: FloatingActionButton.extended(
